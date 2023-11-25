@@ -6,19 +6,41 @@
     <title> About me </title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=Work+Sans:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,600;0,9..40,900;1,9..40,300;1,9..40,500;1,9..40,600;1,9..40,800&family=Merriweather:ital,wght@1,400;1,700&family=Work  +Sans:wght@400;600&display=swap');
         </style>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 
 <body>
     <header>
-        <nav>
-           <a href="../home.html"> Home </a>
-           <a href="./projects.html"> Projects </a>
-           <a href="./about_me.html"> About me</a>
-           <a href="./contact.html"> Contact me </a>
-        </nav>
+        <nav class="navbar navbar-expand-md navbar-dark bg-#0E100F">
+            <img class="p-2" src="../images/logo-michimich.svg" alt="logo-michimich">
+            <a class="navbar-brand" href="#"> </a>
+        
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Contenido del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html"> Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about_me.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"href="contact.html">Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     
     </header>
 
@@ -26,136 +48,132 @@
     <section class="hero-aboutMe">
         <div>
           <h1> About me✌ </h1>
-          <p> Lorem ipsum dolor sit amet consectetur. Sed porttitor dui ac in velit molestie. Diam nunc amet cras vitae nunc. Faucibus neque ullamcorper gravida libero adipiscing quisque lectus faucibus. </p>
-        </div>
-           
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'English')">English</button>
-            <button class="tablinks" onclick="openCity(event, 'Spanish')">Spanish</button>
-          </div>
-          
-          <!-- Tab content -->
-          <div id="English" class="tabcontent">
-            <h3>English</h3>
-            <p>lorem ipsum</p>
-          </div>
-          
-          <div id="Spanish" class="tabcontent">
-            <h3>Spanish</h3>
-            <p>Lorem ipsum</p>
-          </div>
+          <p> Hello! I’m a Cuban-Spanish living in Barcelona. I study graphic design for 5 years in the ISDi (Superior Institute of Design) of the University of Havana, Cuba. I study in  IronHack’s UX/UI Design Part Time Course. 
 
-          <div><img src="../images/Frame 1000005589.svg" alt="arrow" href="#myProjects" class="heroImage"></div>
+            These careers complement each other and give me a complete vision of the UI world, I think the user experience really enriches my previous learnings. 
+            
+            I have an eye for color, typography, and understanding of the methodology used in the creative process. 
+            I’m currently working at HiKlub a start-up that connects people interested in active tourism using a matching test that shows percentages.
+            
+            I'm a creative and committed person interested in UX/UI Design. Interaction with people is one of my strongest points. I’m always happy and willing to do. I love to learn and I’m fast at it 😊.
+            
+            Just a little more about me: I love yoga, playing ukulele, walking around my city and everything crafty. </p>
+        </div>
+        
+
+          <div><img src="../images/arrow-down.svg" alt="arrow" href="#myProjects"></div>
         
     </section>
 
-    <section class="skills">
-        <ul>
-            <li> Skill 1 </li>
-            <li> · </li>
-            <li> Skill 2 </li>
-            <li> · </li>
-            <li> Skill 3 </li>
-            <li> · </li>
-            <li> Skill 4 </li>
+    <section class="skills scroll-container">
+        <ul class="scroll-content">
+            <li class="one scroll-item"> graphic design </li>
+            <li class="dot"> · </li>
+            <li class="two scroll-item"> web development </li>
+            <li class="dot"> · </li>
+            <li class="three scroll-item"> product design </li>
+            <li class="dot"> · </li>
+            <li class="four scroll-item"> research </li>
+            <li class="one scroll-item"> graphic design </li>
+            <li class="dot"> · </li>
+            <li class="two scroll-item"> web development </li>
+            <li class="dot"> · </li>
+            <li class="three scroll-item"> product design </li>
+            <li class="dot"> · </li>
+            <li class="four scroll-item"> research </li>
+            <li class="dot"> · </li>
         </ul>
  </section>
 
- <section id="myProjects">
+ <main>
+
+<section id="myProjects">
     <div class="textLeft">
-        <h3> Experience </h3>
-        <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
-
-    </div>
-
-    <div class="image-medium">
-        <img src="../images/Big.svg" alt="[project title] photo">
+        <h3 class="text-center"> Experience </h3>
+        <p class="text-center-p"> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
     </div>
 
 </section>
 
-     <section id="myProjects">
+<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+    <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+    </svg>
+
+<section id="myProjects">
+    <div class="textLeft">
+        <h3 class="text-center"> Studies </h3>
+        <p class="text-center-p"> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
+
+</section>
+
+<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+    <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+    </svg>
+
+<section id="myProjects">
+    <div class="textLeft">
+        <h3 class="text-center"> Next Steps  </h3>
+        <p class="text-center-p"> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
+    </div>
+
+</section>
+
+<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+    <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+    </svg>
+
+ <section id="my-projects">
             <div class="textLeft">
-                <h3> Studies </h3>
-                <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
+               <h3 class="text-center"> Hobbies </h3>
             </div>
-
-            <div class="image-medium">
-                <img src="../images/Big.svg" alt="[project title] photo">
-            </div>
-    </section>
-
-    <section id="myProjects">
-            <div class="textLeft">
-                <h3> Carrera/life/next Steps </h3>
-                <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
-            </div>
-
-            <div class="image-medium">
-                <img src="../images/Big.svg" alt="[project title] photo">
-            </div>
-        </section>
-
-     <section class="other-skills">
-            <div class="text-top">
-               <h3> Hobbies/Shows </h3>
-               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        
+  
             <div class="images">
-              <img src="../images/image-medium.svg" alt="[Skill 1]">
-              <img src="../images/image-medium.svg" alt="[Skill 2]">
-              <img src="../images/image-medium.svg" alt="[Skill 3]">
-              <img src="../images/image-medium.svg" alt="[Skill 4]">
+              <img src="../images/hobbie1.png" alt="ux-ui-design">
+              <img src="../images/hobbie2.png" alt="research">
+              <img src="../images/hobbie3.png" alt="web-development">
              </div>
-    </section>
 
-    <section id="myProjects">
-        <div class="textLeft">
-            <h3> I was born here </h3>
-            <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
-    
-        </div>
-    
-        <div> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.157468620074!2d-82.32835252441446!3d23.127918779100074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd7915ac91de75%3A0x2fd133caee523ba5!2sCoyula%2C%20La%20Habana%2C%20Cuba!5e0!3m2!1sen!2ses!4v1698356725275!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    
-    </section>
+      </section>
+
+      <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+        <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+        </svg>
+  
 
     <section class="contact">
         <h3> Ready to start a project? </h3>
-        <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. </p>
-        <a href="./contact.html">
-         <button> Contact -> </button>
-        </a>
-    
+        <p> Reach out and let's make it happen. </p>
+        
+        <a href="./pages/contact.html">
+            <button class="primary"> Contact </button>
+          </a>
+
     </section>
 
-
+</main>
 
     <footer>
         <nav>
         
             <ul class="pages">
-             <li><a href="../home.html"> Home </a></li>
-             <li><a href="./projects.html"> Projects </a></li>
-             <li><a href="./about_me.html"> About me</a></li>
-             <li><a href="./contact.html"> Contact me </a></li>
+             <li><a href="../index.html"> Home </a></li>
+             <li><a href="projects.html"> Projects </a></li>
+             <li><a href="about_me.html"> About me</a></li>
+             <li><a href="contact.html"> Contact me </a></li>
             </ul>
         </nav>
-    
+
             <div class="rrss"> 
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/michellyperez/">
-                            <img src="../images/linkedin.svg" alt="linkedin">
+                            <img src="./images/linkedin.svg" alt="linkedin">
                         </a> 
                     </li>
                     
                     <li>
                         <a href="https://www.google.com.">
-                            <img src="../images/rrss-medium.svg" alt="medium">
+                            <img src="./images/rrss-medium.svg" alt="medium">
                         </a>
     
                     </li>
@@ -165,9 +183,16 @@
             <div class="copy">
                 &copy;2023 - Site design and develop by Michelly Pérez
             </div>
-            
-    
+
+            </section>
+
+        
+
     </footer>
+     <!-- Scripts de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-9aSdYTmKHlp6U0DFptst+sIHCr5Pu3QVvzE9A7fF4eDhH4bLylsfs+gGLvOQroGs" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
 </body>
 </html>

@@ -6,153 +6,229 @@
     <title> Projects </title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=Work+Sans:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,600;0,9..40,900;1,9..40,300;1,9..40,500;1,9..40,600;1,9..40,800&family=Merriweather:ital,wght@1,400;1,700&family=Work  +Sans:wght@400;600&display=swap');
         </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-           <a href="../home.html"> Home </a>
-           <a href="./projects.html"> Projects </a>
-           <a href="./about_me.html"> About me</a>
-           <a href="./contact.html"> Contact me </a>
-        </nav>
+        <nav class="navbar navbar-expand-md navbar-dark bg-#0E100F">
+            <img class="p-2" src="../images/logo-michimich.svg" alt="logo-michimich">
+            <a class="navbar-brand" href="#"> </a>
+        
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Contenido del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html"> Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about_me.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"href="contact.html">Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     
     </header>
 
-    <section class="hero-projects"> 
-          <h1> Project title </h1>
-          <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
-          
-          <a href="./project-detail.html">
-            <button> Learn more -> </button>
-          </a>
+    <main>
 
+    <section class="hero-carousel">
+        <div id="carouselExample" class="carousel slide">
+            
+            <div class="carousel-inner">
+              
+                     <div class="carousel-item active">
+                       <img src="../images/Macbook+Pro+13_+Mockup-2.png" class="d-block w-100 carousel-image" alt="singularcover-website">
+                   </div>
+                   
+                   <div class="carousel-item">
+                       <img src="../images/hiklub.png" class="d-block w-100 carousel-image" alt="hiklub-website">
+                   </div>
+              
+                   <div class="carousel-item">
+                       <img src="../images/untangled.png" class="d-block w-100 carousel-image" alt="untangled-app">
+                   </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                 </button>
+            
+                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                 </button>
+          </div>
     </section>
 
-    <section class="skills">
-        <ul>
-            <li> Skill 1 </li>
-            <li> · </li>
-            <li> Skill 2 </li>
-            <li> · </li>
-            <li> Skill 3 </li>
-            <li> · </li>
-            <li> Skill 4 </li>
+    <section class="skills scroll-container">
+        <ul class="scroll-content">
+            <li class="one scroll-item"> graphic design </li>
+            <li class="dot"> · </li>
+            <li class="two scroll-item"> web development </li>
+            <li class="dot"> · </li>
+            <li class="three scroll-item"> product design </li>
+            <li class="dot"> · </li>
+            <li class="four scroll-item"> research </li>
+            <li class="one scroll-item"> graphic design </li>
+            <li class="dot"> · </li>
+            <li class="two scroll-item"> web development </li>
+            <li class="dot"> · </li>
+            <li class="three scroll-item"> product design </li>
+            <li class="dot"> · </li>
+            <li class="four scroll-item"> research </li>
+            <li class="dot"> · </li>
         </ul>
  </section>
 
  <section id="myProjects">
     <div class="textLeft">
-        <h3> Project 1 </h3>
-        <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
-        <a href="./project-detail.html">
-            <button> Learn more -> </button>
+        <h3> Search functionality </h3>
+        <h5> /SingularCover </h5>
+        <p> After reviewing our metrics in Mixpanel, we encountered that the churn rate on the search screen was almost 60% 👎.Our Hypothesis was that our current search feature wasn't "smart" enough for users to find their Business Activity (BA).
+            </p>
+        <a href="./project-singularcover.html">
+            <button class="tertiary"> Learn more -> </button>
         </a>
 
     </div>
 
     <div class="image-medium">
-        <img src="../images/Big.svg" alt="[project title] photo">
+        <img src="../images/singular-medium.png" alt="singularcover-website">
     </div>
 
 </section>
+
+<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+    <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+    </svg>
 
 <section id="myProjects">
     <div class="textLeft">
-        <h3> Project 2 </h3>
-        <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
-        <a href="./project-detail.html">
-            <button> Learn more -> </button>
+        <h3> Conecting experiences </h3>
+        <h5> /Hiklub </h5>
+        <p> Hiklub is a startup that seeks to become the reference platform for active tourism activities.It wants to provide a space to create and share experiences among like-minded people and for this purpose it offers an affinity test that allows matches. </p>
+        <a href="./project-hiklub.html">
+            <button class="tertiary"> Learn more -> </button>
         </a>
 
     </div>
 
     <div class="image-medium">
-        <img src="../images/Big.svg" alt="[project title] photo">
+        <img src="../images/hiklub-medium.png" alt="hiklub-website">
     </div>
 
 </section>
+
+<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+    <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+    </svg>
 
 <section id="myProjects">
     <div class="textLeft">
-        <h3> Project 3 </h3>
+        <h3> UX Design of a wellness app </h3>
+        <h5> /Untangled </h5>
         <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
-        <a href="./project-detail.html">
-            <button> Learn more -> </button>
+        <a href="./project-untangled.html">
+            <button class="tertiary"> Learn more -> </button>
         </a>
 
     </div>
 
     <div class="image-medium">
-        <img src="../images/Big.svg" alt="[project title] photo">
+        <img src="../images/untangled-medium.png" alt="[project title] photo">
     </div>
 
 </section>
 
+<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+    <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+    </svg>
 
-<section class="other-skills">
-    <div class="text-top">
-       <h3> Other skills </h3>
-       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
 
-    <div class="images">
-      <img src="../images/image-medium.svg" alt="[Skill 1]">
-      <img src="../images/image-medium.svg" alt="[Skill 2]">
-      <img src="../images/image-medium.svg" alt="[Skill 3]">
-      <img src="../images/image-medium.svg" alt="[Skill 4]">
-     </div>
-</section>
+    <section id="my-projects">
+        <div class="textLeft">
+           <h3> Other skills </h3>
+        </div>
 
-<section class="other-skills">
-  <div class="text-top">
-        <h3> Testimonials</h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-   </div>
+        <div class="images">
+          <img src="../images/skill1.png" alt="ux-ui-design">
+          <img src="../images/skill2.png" alt="research">
+          <img src="../images/skill3.png" alt="web-development">
+          <img src="../images/skill4.png" alt="graphic-design">
+         </div>
 
-  <div class="grey-container">
-      <div class="testimonial-card"> 
-          <imag src="../images/image-profile.svg" alt="photo of author">
-          <h4> Title testimonial 1 </h4>
-          <p> Author </p>
-      </div>
+         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+          <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+          </svg>
+  </section>
 
-      <div class="testimonial-card">
-          <imag src="../images/image-profile.svg" alt="photo of author">
-          <h4> Title testimonial 2 </h4>
-          <p> Author </p>
+  <section class="testimonials">
+      <div class="text-top">
+            <h3> Testimonials</h3>
+       </div>
 
-      </div>
+      <div class="images">
 
-      <div class="testimonial-card"> 
-          <imag src="../images/image-profile.svg" alt="photo of author">
-          <h4> Title testimonial 3 </h4>
-          <p> Author </p>
+           <div class="testimonial-card">
+              <imag src="../images/person1.png" alt="john-smith">
+                <h5>John Smith /Position</h5>
+                <p>Lorem ipsum dolor sit amet consectetur. Feugiat volutpat erat non nunc in volutpat risus scelerisque malesuada.</p>
+            </div>
 
-      </div>
-   </div>
-</section>
-    
+          <div class="testimonial-card">
+            <imag src="../images/person2.png" alt="john-smith">
+              <h5>John Smith /Position</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Feugiat volutpat erat non nunc in volutpat risus scelerisque malesuada.</p>
+          </div>
 
-<section class="contact">
-    <h3> Ready to start a project? </h3>
-    <p> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. </p>
-    <a href="./contact.html">
-        <button> Contact -> </button>
-       </a>
+          <div class="testimonial-card"> 
+            <imag src="../images/person3.png" alt="john-smith">
+              <h5>John Smith /Position</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Feugiat volutpat erat non nunc in volutpat risus scelerisque malesuada.</p>
+          </div>
+          <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+            <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
+            </svg>
 
 </section>
+
+
+  <section class="contact">
+      <h3> Ready to start a project? </h3>
+      <p> Reach out and let's make it happen. </p>
+      
+      <a href="./pages/contact.html">
+          <button class="primary"> Contact </button>
+        </a>
+
+  </section>
+
+</main>
 
 <footer>
     <nav>
     
         <ul class="pages">
-         <li><a href="../home.html"> Home </a></li>
-         <li><a href="./projects.html"> Projects </a></li>
-         <li><a href="./about_me.html"> About me</a></li>
-         <li><a href="./contact.html"> Contact me </a></li>
+         <li><a href="../index.html"> Home </a></li>
+         <li><a href="projects.html"> Projects </a></li>
+         <li><a href="about_me.html"> About me</a></li>
+         <li><a href="contact.html"> Contact me </a></li>
         </ul>
     </nav>
 
@@ -179,8 +255,11 @@
         
 
 </footer>
-    
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+ <!-- Scripts de Bootstrap -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-nv+1W6V5D5SL6gBF2QzQF5IH1NEKPrDl/UqjBbbchZLOBrux2FxFb3iigd5zhE7x" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b6u9XypqpLKnKZ+lr56lK4Uz5lunm5/A6A9F5lUWctV98s2wnhCO7Q3U1ul1/G5f" crossorigin="anonymous"></script>
     
 </body>
 </html>
