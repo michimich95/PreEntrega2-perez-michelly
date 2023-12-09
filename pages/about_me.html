@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> About me </title>
+    
+    <!-- link al css -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- text -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,600;0,9..40,900;1,9..40,300;1,9..40,500;1,9..40,600;1,9..40,800&family=Merriweather:ital,wght@1,400;1,700&family=Work  +Sans:wght@400;600&display=swap');
         </style>
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+ <!-- boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- aos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 
-
+<!-- body -->
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-#0E100F">
@@ -19,9 +28,9 @@
             <a class="navbar-brand" href="#"> </a>
         
           
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
         
             <!-- Contenido del menú -->
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,8 +53,8 @@
     
     </header>
 
-
-    <section class="hero-aboutMe">
+ <!-- hero -->
+    <section class="hero-aboutMe" data-aos="fade-up">
         <div>
           <h1> About me✌ </h1>
           <p> Hello! I’m a Cuban-Spanish living in Barcelona. I study graphic design for 5 years in the ISDi (Superior Institute of Design) of the University of Havana, Cuba. I study in  IronHack’s UX/UI Design Part Time Course. 
@@ -65,6 +74,7 @@
         
     </section>
 
+    <!-- skills -->
     <section class="skills scroll-container">
         <ul class="scroll-content">
             <li class="one scroll-item"> graphic design </li>
@@ -86,8 +96,8 @@
  </section>
 
  <main>
-
-<section id="myProjects">
+<!-- experience -->
+<section id="myProjects" data-aos="fade-up">
     <div class="textLeft">
         <h3 class="text-center"> Experience </h3>
         <p class="text-center-p"> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
@@ -99,7 +109,8 @@
     <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
     </svg>
 
-<section id="myProjects">
+<!-- studies -->
+<section id="myProjects" data-aos="fade-up">
     <div class="textLeft">
         <h3 class="text-center"> Studies </h3>
         <p class="text-center-p"> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
@@ -110,7 +121,8 @@
     <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
     </svg>
 
-<section id="myProjects">
+<!-- next steps -->
+<section id="myProjects" data-aos="fade-up">
     <div class="textLeft">
         <h3 class="text-center"> Next Steps  </h3>
         <p class="text-center-p"> Lorem ipsum dolor sit amet consectetur. Tellus auctor ac magnis metus ullamcorper in scelerisque tincidunt. Nulla sed habitant arcu sagittis mi. Nisi volutpat malesuada vulputate morbi non purus. Id sollicitudin consectetur mauris faucibus faucibus sit nunc.</p>
@@ -122,29 +134,40 @@
     <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
     </svg>
 
- <section id="my-projects">
-            <div class="textLeft">
+<!-- Hobbies -->
+ <section id="my-projects" >
+            <div class="textLeft" data-aos="fade-up">
                <h3 class="text-center"> Hobbies </h3>
             </div>
   
-            <div class="images">
-              <img src="../images/hobbie1.png" alt="ux-ui-design">
-              <img src="../images/hobbie2.png" alt="research">
-              <img src="../images/hobbie3.png" alt="web-development">
-             </div>
-
+            <div data-aos="fade-up" class="images">
+                <div class="card-project-no" data-aos="fade-up">
+                    <img src="../images/hobbie1.png" alt="play-window">
+                    <p> TV Shows & Realities </p>
+                </div>
+    
+                <div class="card-project-no" data-aos="fade-up">
+                    <img src="../images/hobbie2.png" alt="compass">
+                    <p> Discover new places </p>
+                </div>
+    
+                <div class="card-project-no" data-aos="fade-up">
+                    <img src="../images/hobbie3.png" alt="social-media">
+                    <p> Being in touch with friends </p>
+                </div>
+    
       </section>
 
       <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
         <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
         </svg>
   
-
+<!-- contact section -->
     <section class="contact">
-        <h3> Ready to start a project? </h3>
-        <p> Reach out and let's make it happen. </p>
+        <h3 data-aos="fade-up"> Ready to start a project? </h3>
+        <p data-aos="fade-up"> Reach out and let's make it happen. </p>
         
-        <a href="./pages/contact.html">
+        <a href="contact.html" data-aos="fade-up">
             <button class="primary"> Contact </button>
           </a>
 
@@ -152,7 +175,8 @@
 
 </main>
 
-    <footer>
+<!-- footer -->
+    <footer data-aos="fade-up">
         <nav>
         
             <ul class="pages">
@@ -163,22 +187,21 @@
             </ul>
         </nav>
 
-            <div class="rrss"> 
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/michellyperez/">
-                            <img src="./images/linkedin.svg" alt="linkedin">
-                        </a> 
-                    </li>
-                    
-                    <li>
-                        <a href="https://www.google.com.">
-                            <img src="./images/rrss-medium.svg" alt="medium">
-                        </a>
-    
-                    </li>
-                </ul>
-            </div>
+        <div class="rrss"> 
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/michellyperez/">
+                        <img src="../images/linkedin.svg" alt="linkedin">
+                    </a> 
+                </li>
+                
+                <li>
+                    <a href="https://michelle-graphics.medium.com/">
+                        <img src="../images/rrss-medium.svg" alt="medium">
+                    </a>
+                </li>
+            </ul>
+        </div>
         
             <div class="copy">
                 &copy;2023 - Site design and develop by Michelly Pérez
@@ -189,10 +212,16 @@
         
 
     </footer>
-     <!-- Scripts de Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-9aSdYTmKHlp6U0DFptst+sIHCr5Pu3QVvzE9A7fF4eDhH4bLylsfs+gGLvOQroGs" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!-- Scripts de Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      <!-- Scripts de AOS -->
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+      <script>
+       AOS.init();
+      </script>
         
 </body>
 </html>

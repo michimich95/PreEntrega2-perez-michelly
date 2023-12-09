@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> About me </title>
+    <title> SingularCover Project </title>
+
+    <!-- link al css -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- text -->
     <style>
        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,600;0,9..40,900;1,9..40,300;1,9..40,500;1,9..40,600;1,9..40,800&family=Merriweather:ital,wght@1,400;1,700&family=Work  +Sans:wght@400;600&display=swap');
         </style>
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- aos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 </head>
 
-
+<!-- body -->
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-#0E100F">
@@ -19,9 +29,9 @@
             <a class="navbar-brand" href="#"> </a>
         
           
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
         
             <!-- Contenido del menú -->
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -47,34 +57,35 @@
 
     <main>
 
-    <section>
-        <div class="secondary-navbar">
-          <a href="./projects.html" class="tertiary">&larr; Back </a>
-        </div>
+<!-- hero -->  
+     <section>
+            <div class="secondary-navbar" data-aos="fade-up">
+            </div>
+    
+            <div data-aos="fade-up" class="project-detail-image">
+                <img src="../images/Macbook+Pro+13_+Mockup-2.png" alt="singularcover-website" class="project-img">
+            </div>
+     </section>
 
-        <div class="project-detail-image">
-            <img src="../images/Macbook+Pro+13_+Mockup-2.png" alt="singularcover-website" class="project-img">
-        </div>
-    </section>
-
+<!-- content -->
     <section class="content">
-        <div>
+        <div data-aos="fade-up">
             <h6>Date: September 2021</h6>
             <h3> Search functionality </h3>
             <h5> Team: Ivan Alvins </h5>
             <h5> Role: UX Designer </h5>
         </div>
        
-        <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+        <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
             <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
             </svg>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5>SingularCover</h5>
             <p> SingularCover is a digital insurance company (Insurtech). Its core value proposition is to offer self-employed and small companies personalized insurance that fits their needs.</p>
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
                 <h5>Role</h5>
                 <p> As a UI Design intern in the company, trying to find my way into research 😅, I had to prove how eager I was to get involved in the process and to learn. 
 
@@ -84,7 +95,7 @@
                 <img src="../images/Mockup-1.png" alt="app-screens">
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h4> Search Feature </h4>
             <h5>Context </h5>
             <p> After reviewing our metrics in Mixpanel, we encountered that the churn rate on the search screen was almost 60% 👎.
@@ -96,13 +107,13 @@
             <img src="../images/Search.png" alt="first-page-search">
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5> What were we trying to achieve? </h5>
             <p> We want to increase the success rate of users finding their Business Activity (BA) and therefore hiring an insurance product successfully</p>
 
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5> What was our plan? </h5>
             <p> We decided to provide the user with two modes of engagement to search their BA.
 
@@ -110,7 +121,7 @@
 
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5> What options did we consider? </h5>
             <p> For the UI we considered using a modal (option A) to show the search functionality or showing the search without a modal (option B) to reduce the number of interactions.
             
@@ -124,32 +135,32 @@
 
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5> What drove our decision? </h5>
             <p> We got feedback from users about the number of clicks it took them to get to the search when using the modal option. This made us rethink the navigation and discard the modal.</p>
         </div>
 
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5> What actually happened? </h5>
             <p> When trying the option without the modal (Option B), users didn't understand how to navigate through the search. They didn’t associate the breadcrumb element with the filter navigation. Out of 6 users, only 1 understood the breadcrumb element.</p>
 
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5> How did we react? </h5>
             <p> We got back to the drawing board and provided a quick-win solution to reduce the number of clicks from the user for Option A (Using a modal).
             </p>
 
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5> What was the result? </h5>
             <img src="../images/Search-video-1.gif" alt="search-function-video">
 
         </div>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
             <h5> Next Steps </h5>
             <p> In the next steps, we must accompany the front-end team in the development of the new functionality and review the fidelity of the design (QA).
 
@@ -158,11 +169,11 @@
 
         </div>
 
-        <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
+        <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1158 2" fill="none">
             <path d="M0 1H1158" stroke="#FFFCE1" stroke-opacity="0.1"/>
             </svg>
 
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-up">
                 <p> Working at SingularCover, as time goes by I continue to grow professionally, stay tuned for future case studies 🙃.
 
                     Thanks for reading! 
@@ -172,22 +183,9 @@
         
 
     </section>
-    
-    <section class="navigation">
-        <hr>
-        <div class="other-projects" >
-            <img src="../images/arrow left.svg">
-            <h5> Previuos project </h5>
-        </div>
 
-        <div class="other-projects">
-            <h5> Next project </h5>
-            <img src="../images/arrow rigth.svg">
-        </div>
-
-    </section>
-
-    <section class="contact">
+<!-- contact -->
+    <section class="contact" data-aos="fade-up">
         <h3> Ready to start a project? </h3>
         <p> Reach out and let's make it happen. </p>
         
@@ -198,7 +196,8 @@
     </section>
 
 
-    <footer>
+<!-- footer -->
+    <footer data-aos="fade-up">
         <nav>
         
             <ul class="pages">
@@ -218,7 +217,7 @@
                     </li>
                     
                     <li>
-                        <a href="https://www.google.com.">
+                        <a href="https://michelle-graphics.medium.com/">
                             <img src="../images/rrss-medium.svg" alt="medium">
                         </a>
     
@@ -236,14 +235,17 @@
             
     
     </footer>
+
      <!-- Scripts de Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-9aSdYTmKHlp6U0DFptst+sIHCr5Pu3QVvzE9A7fF4eDhH4bLylsfs+gGLvOQroGs" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script>
-    function goBack() {
-        window.history.back();
-    }
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      <!-- Scripts de AOS -->
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+      <script>
+       AOS.init();
+      </script>
 </script>
 
 </body>
